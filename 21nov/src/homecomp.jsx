@@ -44,10 +44,12 @@
 
 
 import { Component } from "react";
+import "./homecomp.css"
 class Main extends Component{
     
     obj=[
         {
+          "available":true,
           "id": 1,
           "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
           "price": 109.95,
@@ -56,10 +58,12 @@ class Main extends Component{
           "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
           "rating": {
             "rate": 3.9,
-            "count": 120
+            "count": 120,
+         
           }
         },
         {
+          "available":true,
           "id": 2,
           "title": "Mens Casual Premium Slim Fit T-Shirts ",
           "price": 22.3,
@@ -69,9 +73,11 @@ class Main extends Component{
           "rating": {
             "rate": 4.1,
             "count": 259
+
           }
         },
         {
+          "available":false,
           "id": 3,
           "title": "Mens Cotton Jacket",
           "price": 55.99,
@@ -84,6 +90,7 @@ class Main extends Component{
           }
         },
         {
+          "available":true,
           "id": 4,
           "title": "Mens Casual Slim Fit",
           "price": 15.99,
@@ -97,6 +104,7 @@ class Main extends Component{
         }
         ,
         {
+          "available":true,
           "id": 5,
           "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
           "price": 695,
@@ -109,6 +117,7 @@ class Main extends Component{
           }
         },
         {
+          "available":true,
           "id": 6,
           "title": "Solid Gold Petite Micropave ",
           "price": 168,
@@ -125,14 +134,32 @@ class Main extends Component{
   
                 
         return(
-            <>
+            <> 
+            <div className={this.obj[0].available ? "available" : "unavailable"}>
             <p><strong>Title :</strong>{this.obj[0].title}  <strong> Price :</strong> {this.obj[0].price} <strong>Image :</strong><img src={this.obj[0].image} alt="img1" height={150}></img></p>
+            </div>
+            {/* ------------------- */}
+            <div className={this.obj[1].available ? "available" : "unavailable"}>
             <p><strong>Title :</strong>{this.obj[1].title}  <strong> Price :</strong> {this.obj[1].price} <strong>Image :</strong><img src={this.obj[1].image} alt="img1" height={150}></img></p>
+            </div>
+            {/* ------------------- */}
+            <div className={this.obj[2].available ? "available" : "unavailable"}>
             <p><strong>Title :</strong>{this.obj[2].title}  <strong> Price :</strong> {this.obj[2].price} <strong>Image :</strong><img src={this.obj[2].image} alt="img1" height={150}></img></p>
+            </div>
+           {/* ------------------- */}
+            <div className={this.obj[3].available ? "available" : "unavailable"}>
             <p><strong>Title :</strong>{this.obj[3].title}  <strong> Price :</strong> {this.obj[3].price} <strong>Image :</strong><img src={this.obj[3].image} alt="img1" height={150}></img></p>
+            </div>
+            {/* ------------------- */}
+            <div className={this.obj[4].available ? "available" : "unavailable"}>
             <p><strong>Title :</strong>{this.obj[4].title}  <strong> Price :</strong> {this.obj[4].price} <strong>Image :</strong><img src={this.obj[4].image} alt="img1" height={150}></img></p>
-            <p><strong>Title :</strong>{this.obj[5].title}  <strong> Price :</strong> {this.obj[5].price} <strong>Image :</strong><img src={this.obj[5].image} alt="img1" height={150}></img></p>
-
+            </div>
+           {/* ------------------- */}
+            <div className={this.obj[5].available ? "available" : "unavailable"}>
+            <p><strong>Title :</strong>{this.obj[4].title}  <strong> Price :</strong> {this.obj[4].price} <strong>Image :</strong><img src={this.obj[4].image} alt="img1" height={150}></img></p>
+            </div>
+            {/* ------------------- */}
+         
             </>
         )
     }

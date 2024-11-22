@@ -1,0 +1,9 @@
+.available{
+
+    color: white;
+    font-size: 40px;
+    background-color: green;
+}
+.unavailable{
+    background-color: red;
+}
