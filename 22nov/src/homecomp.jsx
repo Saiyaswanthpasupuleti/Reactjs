@@ -302,6 +302,7 @@ function Main(props){
         <h1>{props.name}</h1>
         <h1>{props.city}</h1>
         <h1>{props.Age}</h1>
+        <h1></h1>
         </>
     )
 }
