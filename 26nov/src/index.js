@@ -3,31 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Main from './main';
-import A from './button';
+import Main from './main';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-
     {/* <App /> */}
-   {/* <Main name="yaswanth" city="Tenali"/> */}
-   {/* <Main>
-    <h1>child1</h1>
-    <h1>child2</h1>
-    <h1>child3</h1>
-    <h1>child4</h1>
-   </Main> */}
-
-
-
-   <A/>
-
-
-
-   
+    <Main/>
   </React.StrictMode>
 );
 
