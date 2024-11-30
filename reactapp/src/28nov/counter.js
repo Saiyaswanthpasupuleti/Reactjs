@@ -28,7 +28,8 @@ class Count extends Component{
     }
     render(){
         return(
-            <div style={{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh",flexDirection:"column",gap:"10px"}}>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh",border:"2px solid black",flexDirection:"column",gap:"10px"}}>
+            <div><h1>28 Nov task</h1></div>
             <Button variant="dark"onClick={this.handle1}>+1</Button>
             <Button variant="dark" onClick={this.handle2}>-1</Button>
             <Button variant="dark" onClick={this.handle3}>+2</Button>

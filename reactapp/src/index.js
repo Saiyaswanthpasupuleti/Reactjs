@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 // import Conditiom from './28nov/condition';
 // import Parent from './parent';
 import Count from './28nov/counter';
+import Main from './29nov/29nov';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -19,7 +20,7 @@ root.render(
   {/* <User login="user"/> */}
   {/* <Parent login="user"/> */}
   <Count/>
-
+  <Main/>
   </React.StrictMode>
 );
 
