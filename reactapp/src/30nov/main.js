@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 
 class Main1 extends Component{
+    
     // constructor(){
     //     super()
     //     this.state={firstname:"",lastname:"",fullname:""}
@@ -52,6 +53,7 @@ class Main1 extends Component{
     render(){
         return(
             <div  style={{height:"100vh",border:"2px solid black",display:"flex", flexDirection:"column",gap:"50px",justifyContent:"center",alignItems:"center"}}>
+            <h1>30 Nov task</h1>
             <form onSubmit={this.handle}>
                 <input type="number" name="num"></input>
                 <input type="submit"></input>
