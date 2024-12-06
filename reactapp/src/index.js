@@ -17,6 +17,8 @@ import Lifecycle from './5dec';
 import Card from './4dec';
 import New from './3dec';
 import Todo from './2dec';
+import Hook from './6dec';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -33,7 +35,7 @@ root.render(
   <Card/>
 
 <Lifecycle/>
-
+<Hook/>
   </React.StrictMode>
 );
 
