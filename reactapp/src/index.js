@@ -12,6 +12,11 @@ import reportWebVitals from './reportWebVitals';
 import Count from './28nov/counter';
 import Main from './29nov/29nov';
 import Main1 from './30nov/main';
+// import Spinner from './3dec';
+import Lifecycle from './5dec';
+import Card from './4dec';
+import New from './3dec';
+import Todo from './2dec';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -23,6 +28,12 @@ root.render(
   <Count/>
   <Main/>
   <Main1/>
+  <Todo/>
+  <New/>
+  <Card/>
+
+<Lifecycle/>
+
   </React.StrictMode>
 );
 
