@@ -18,6 +18,7 @@ import Card from './4dec';
 import New from './3dec';
 import Todo from './2dec';
 import Hook from './6dec';
+import FormComp from './7dec';
 import Calculator from './6dec/cal/caLindex';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +39,7 @@ root.render(
   <Hook/>
 
   <Calculator/>
+  <FormComp/>
   </React.StrictMode>
 );
 
