@@ -22,6 +22,7 @@ import FormComp from './7dec';
 import Calculator from './6dec/cal/caLindex';
 import Form from './10dec/form';
 import Effect from './11dec';
+import FormX from './11dec/login';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -44,7 +45,7 @@ root.render(
   <Form/>
   <Effect/>
 
-  
+<FormX/>
   </React.StrictMode>
 );
 

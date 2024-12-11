@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function Effect(){
     let [cart,UpdateCart]=useState(0)
     let [products,setproducts]=useState([])
+    
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
@@ -18,6 +19,7 @@ function Effect(){
     }
     return(
         <div style={{height:"auto",border:"2px solid black",display:"flex",gap:"50px",justifyContent:"center",alignItems:"center",flexWrap:"wrap"}}>
+        <h1>11 Dec</h1>
         <p>Cart Value : {cart}</p>
         {products.map(product => (
                     <Card  key={product.id} style={{ width: '18rem'}}>
