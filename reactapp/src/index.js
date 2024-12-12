@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +24,10 @@ import Calculator from './6dec/cal/caLindex';
 import Form from './10dec/form';
 import Effect from './11dec';
 import FormX from './11dec/login';
+import All from './12dec/index';
+
+
+// import Use from './11dec/useeffect';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -46,6 +51,10 @@ root.render(
   <Effect/>
 
 <FormX/>
+<All/>
+
+{/* <Use/> */}
+
   </React.StrictMode>
 );
 
