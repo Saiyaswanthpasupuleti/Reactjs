@@ -25,7 +25,7 @@ import Form from './10dec/form';
 import Effect from './11dec';
 import FormX from './11dec/login';
 import All from './12dec/index';
-
+import MainPage from './13dec/MainPage';
 
 // import Use from './11dec/useeffect';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -52,6 +52,7 @@ root.render(
 
 <FormX/>
 <All/>
+<MainPage/>
 
 {/* <Use/> */}
 
