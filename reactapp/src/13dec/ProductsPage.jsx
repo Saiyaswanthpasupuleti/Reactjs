@@ -9,14 +9,14 @@ function ProductPage(){
         .then(res=>res.json())
         .then(res=>SetProducts(res))},[])
         return(
-            <>
+            <div >
               <ListGroup>
-            {products.length>0?(products.map((a)=><ListGroup.Item><Link id="a" to={`/products/${a.id}`}>{a.title}</Link></ListGroup.Item>
+            {products.length>0?(products.map((a)=><ListGroup.Item ><Link id="a" to={`/products/${a.id}`}>{a.title}</Link></ListGroup.Item>
 )):(<BSpinner/>)}
           
       
     </ListGroup>
-            </>
+            </div>
         )
     
 }

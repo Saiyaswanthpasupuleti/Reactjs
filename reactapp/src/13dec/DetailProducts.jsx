@@ -12,10 +12,10 @@ function DetailProduct(){
 
     const data=products.find((a)=>a.id===Number(id))
     return(
-        <>
+        <div >
         {products.length>0?(<Bcard img={data.image} title={data.title} price={data.price}/>):(<BSpinner/>)}
        
-        </>
+        </div>
     )
 }
 export default DetailProduct;

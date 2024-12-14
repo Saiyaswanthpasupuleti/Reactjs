@@ -5,7 +5,7 @@ function BSpinner() {
     <>
      
       
-      <Spinner animation="grow" variant="dark" />
+     <Spinner animation="border" variant="dark" />
     </>
   );
 }
