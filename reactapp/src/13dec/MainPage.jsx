@@ -9,8 +9,8 @@ function MainPage(){
         <div style={{height:"100vh",border:"2px solid black",display:"flex",gap:"50px",justifyContent:"center",alignItems:"center",flexWrap:"wrap"}}>
        <h1>13 December</h1>
        <Router>
-        <Link to="/home">Home</Link>
-        <Link to="/products">Products</Link>
+        <Link to="/home" id="a">Home</Link>
+        <Link to="/products" id="a">Products</Link>
         <Routes>
             <Route path="/home" element={<Home/>}></Route>
             <Route path="/products" element={<ProductPage/>}></Route>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BSpinner from "./spinner";
 import { Link } from "react-router-dom";
 import ListGroup from 'react-bootstrap/ListGroup';
-
+import "./indexx.css"
 function ProductPage(){
     const [products,SetProducts]=useState([])
     useEffect(()=>{fetch('https://fakestoreapi.com/products')
@@ -11,7 +11,7 @@ function ProductPage(){
         return(
             <>
               <ListGroup>
-            {products.length>0?(products.map((a)=><ListGroup.Item><Link to={`/products/${a.id}`}>{a.title}</Link></ListGroup.Item>
+            {products.length>0?(products.map((a)=><ListGroup.Item><Link id="a" to={`/products/${a.id}`}>{a.title}</Link></ListGroup.Item>
 )):(<BSpinner/>)}
           
       

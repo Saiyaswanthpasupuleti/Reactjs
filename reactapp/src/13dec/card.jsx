@@ -15,6 +15,7 @@ function Bcard(props) {
         <Button variant="primary">price :{props.price}</Button>
   
   <Button variant="danger" onClick={()=>nav("/home")}>Home</Button>
+  <Button variant="primary" onClick={()=>nav("/products")}>Back</Button>
         </div>
       
       </Card.Body>
