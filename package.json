@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "node": "^18.20.5"
+    "node": "^18.20.5",
+    "react-router-dom": "^7.0.2"
   }
 }

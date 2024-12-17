@@ -28,6 +28,8 @@ import All from './12dec/index';
 import MainPage from './13dec/MainPage';
 import { ProviderFunction } from './14dec';
 import Results from './14dec/datas';
+import Memo from './17dec/memo';
+import CallbackH from './17dec/callbackhook';
 
 
 // import Use from './11dec/useeffect';
@@ -62,8 +64,8 @@ root.render(
   <ProviderFunction>
     <Results></Results>
   </ProviderFunction>
-   
-
+   <Memo/>
+{/* <CallbackH/> */}
   </React.StrictMode>
 );
 
