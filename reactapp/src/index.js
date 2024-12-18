@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,9 +29,12 @@ import { ProviderFunction } from './14dec';
 import Results from './14dec/datas';
 import Memo from './17dec/memo';
 import CallbackH from './17dec/callbackhook';
-
-
+// import { ParentContext } from './18dec/contexts';
+import { ParentComponent } from './18dec/contexts';
+import ChildContext from './18dec/contexts1';
 // import Use from './11dec/useeffect';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -66,6 +68,8 @@ root.render(
   </ProviderFunction>
    <Memo/>
 {/* <CallbackH/> */}
+
+<ParentComponent/>
   </React.StrictMode>
 );
 
