@@ -28,10 +28,13 @@ import MainPage from './13dec/MainPage';
 import { ProviderFunction } from './14dec';
 import Results from './14dec/datas';
 import Memo from './17dec/memo';
-import CallbackH from './17dec/callbackhook';
+// import CallbackH from './17dec/callbackhook';
 // import { ParentContext } from './18dec/contexts';
 import { ParentComponent } from './18dec/contexts';
-import ChildContext from './18dec/contexts1';
+// import ChildContext from './18dec/contexts1';
+import Signup from './fireBase/signup';
+import Login from './fireBase/login';
+import Index from './fireBase';
 // import Use from './11dec/useeffect';
 
 
@@ -70,6 +73,9 @@ root.render(
 {/* <CallbackH/> */}
 
 <ParentComponent/>
+{/* <Signup/> */}
+{/* <Login/> */}
+<Index/>
   </React.StrictMode>
 );
 
