@@ -35,6 +35,7 @@ import { ParentComponent } from './18dec/contexts';
 import Signup from './fireBase/signup';
 import Login from './fireBase/login';
 import Index from './fireBase';
+import Hackthon from './hackthon';
 // import Use from './11dec/useeffect';
 
 
@@ -46,7 +47,7 @@ root.render(
   {/* <Conditiom loggedin={true}/> */}
   {/* <User login="user"/> */}
   {/* <Parent login="user"/> */}
-  <Count/>
+  {/* <Count/>
   <Main/>
   <Main1/>
   <Todo/>
@@ -62,20 +63,22 @@ root.render(
 
 <FormX/>
 <All/>
-<MainPage/>
+<MainPage/> */}
 
 {/* <Use/> */}
 
-  <ProviderFunction>
+  {/* <ProviderFunction>
     <Results></Results>
   </ProviderFunction>
-   <Memo/>
+   <Memo/> */}
 {/* <CallbackH/> */}
 
-<ParentComponent/>
+{/* <ParentComponent/> */}
 {/* <Signup/> */}
 {/* <Login/> */}
-<Index/>
+{/* <Index/> */}
+{/* <Hackthon/> */}
+
   </React.StrictMode>
 );
 
