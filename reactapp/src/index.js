@@ -35,7 +35,8 @@ import { ParentComponent } from './18dec/contexts';
 import Signup from './fireBase/signup';
 import Login from './fireBase/login';
 import Index from './fireBase';
-import Hackthon from './hackthon';
+import Circle from './fireBase/Circle';
+// import Hackthon from './hackthon';
 // import Use from './11dec/useeffect';
 
 
@@ -78,6 +79,9 @@ root.render(
 {/* <Login/> */}
 {/* <Index/> */}
 {/* <Hackthon/> */}
+
+{/* <Circle/> */}
+{/* <Circle/> */}
 
   </React.StrictMode>
 );
