@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "030308ff-b289-4e09-803a-8fac4dd23fb8"
+      }
+    },
+    "android": {
+      "package": "com.saiyaswanth.reactapp"
+    }
+  }
+}

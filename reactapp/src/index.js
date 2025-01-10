@@ -9,37 +9,39 @@ import reportWebVitals from './reportWebVitals';
 // import Main from './28nov/28nov';
 // import Conditiom from './28nov/condition';
 // import Parent from './parent';
-import Count from './28nov/counter';
-import Main from './29nov/29nov';
-import Main1 from './30nov/main';
+// import Count from './28nov/counter';
+// import Main from './29nov/29nov';
+// import Main1 from './30nov/main';
 // import Spinner from './3dec';
-import Lifecycle from './5dec';
-import Card from './4dec';
-import New from './3dec';
-import Todo from './2dec';
-import Hook from './6dec';
-import FormComp from './7dec';
-import Calculator from './6dec/cal/caLindex';
-import Form from './10dec/form';
-import Effect from './11dec';
-import FormX from './11dec/login';
-import All from './12dec/index';
-import MainPage from './13dec/MainPage';
-import { ProviderFunction } from './14dec';
-import Results from './14dec/datas';
-import Memo from './17dec/memo';
+// import Lifecycle from './5dec';
+// import Card from './4dec';
+// import New from './3dec';
+// import Todo from './2dec';
+// import Hook from './6dec';
+// import FormComp from './7dec';
+// import Calculator from './6dec/cal/caLindex';
+// import Form from './10dec/form';
+// import Effect from './11dec';
+// import FormX from './11dec/login';
+// import All from './12dec/index';
+// import MainPage from './13dec/MainPage';
+// import { ProviderFunction } from './14dec';
+// import Results from './14dec/datas';
+// import Memo from './17dec/memo';
 // import CallbackH from './17dec/callbackhook';
 // import { ParentContext } from './18dec/contexts';
-import { ParentComponent } from './18dec/contexts';
+// import { ParentComponent } from './18dec/contexts';
 // import ChildContext from './18dec/contexts1';
-import Signup from './fireBase/signup';
-import Login from './fireBase/login';
-import Index from './fireBase';
-import Circle from './fireBase/Circle';
+// import Signup from './fireBase/signup';
+// import Login from './fireBase/login';
+// import Index from './fireBase';
+// import Circle from './fireBase/Circle';
 // import Hackthon from './hackthon';
 // import Use from './11dec/useeffect';
-
-
+import ButtonsFunction from './ReactsReduxs/ButtonsFunction';
+import { Provider } from 'react-redux';
+import { mainstore } from './ReactsReduxs/Store/FirstStore';
+import ButtonResult from './ReactsReduxs/ButtonResult';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -82,6 +84,10 @@ root.render(
 
 {/* <Circle/> */}
 {/* <Circle/> */}
+<Provider store={mainstore}>
+<ButtonsFunction/>
+<ButtonResult/>
+</Provider>
 
   </React.StrictMode>
 );
