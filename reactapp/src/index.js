@@ -38,10 +38,15 @@ import reportWebVitals from './reportWebVitals';
 // import Circle from './fireBase/Circle';
 // import Hackthon from './hackthon';
 // import Use from './11dec/useeffect';
-import ButtonsFunction from './ReactsReduxs/ButtonsFunction';
+// import ButtonsFunction from './ReactsReduxs/Components/ButtonsFunction';
+// import { Provider } from 'react-redux';
+// import { mainstore } from './ReactsReduxs/Store/FirstStore';
+// import ButtonResult from './ReactsReduxs/Components/ButtonResult';
+import FirstBuutons from './ReactsReduxs/Components/FirstBuutons';
+
 import { Provider } from 'react-redux';
-import { mainstore } from './ReactsReduxs/Store/FirstStore';
-import ButtonResult from './ReactsReduxs/ButtonResult';
+import FirstResultedValue from './ReactsReduxs/Components/FirstResultedValue';
+import { ResultedStore } from './ReactsReduxs/Store/SecondStore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -84,10 +89,15 @@ root.render(
 
 {/* <Circle/> */}
 {/* <Circle/> */}
-<Provider store={mainstore}>
+{/* <Provider store={mainstore}>
 <ButtonsFunction/>
 <ButtonResult/>
-</Provider>
+</Provider> */}
+
+<Provider store={ResultedStore}>
+      <FirstBuutons />
+      <FirstResultedValue />
+    </Provider>
 
   </React.StrictMode>
 );

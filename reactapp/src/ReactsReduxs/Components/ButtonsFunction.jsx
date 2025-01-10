@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { increment ,decrement} from './Actions/FirstAction';
+import { increment ,decrement} from '../Actions/FirstAction';
 export default function ButtonsFunction() {
     const Dispatch=useDispatch()
   return (
