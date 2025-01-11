@@ -6,6 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import User from './28nov/user';
 // import Admin from './28nov/admin';
 import reportWebVitals from './reportWebVitals';
+import { ButtonsFunction } from './ReactsReduxs/Components/ButtonsFunction';
+import ButtonResult from './ReactsReduxs/Components/ButtonResult';
+import { Provider } from 'react-redux';
+import { resultStore } from './ReactsReduxs/Store/FirstStore';
 // import Main from './28nov/28nov';
 // import Conditiom from './28nov/condition';
 // import Parent from './parent';
@@ -42,11 +46,14 @@ import reportWebVitals from './reportWebVitals';
 // import { Provider } from 'react-redux';
 // import { mainstore } from './ReactsReduxs/Store/FirstStore';
 // import ButtonResult from './ReactsReduxs/Components/ButtonResult';
-import FirstBuutons from './ReactsReduxs/Components/FirstBuutons';
+// import FirstBuutons from './ReactsReduxs/Components/FirstBuutons';
 
-import { Provider } from 'react-redux';
-import FirstResultedValue from './ReactsReduxs/Components/FirstResultedValue';
-import { ResultedStore } from './ReactsReduxs/Store/SecondStore';
+// import { Provider } from 'react-redux';
+// import FirstResultedValue from './ReactsReduxs/Components/FirstResultedValue';
+// import { ResultedStore } from './ReactsReduxs/Store/SecondStore';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -93,11 +100,20 @@ root.render(
 <ButtonsFunction/>
 <ButtonResult/>
 </Provider> */}
-
+{/* 
 <Provider store={ResultedStore}>
       <FirstBuutons />
       <FirstResultedValue />
-    </Provider>
+    </Provider> */}
+
+<Provider store={resultStore}>
+<ButtonsFunction/>
+<ButtonResult/>
+</Provider>
+
+
+
+
 
   </React.StrictMode>
 );
