@@ -4,7 +4,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import App from './App';
 import User from './28nov/user';
-// import Admin from './28nov/admin';
+import Admin from './28nov/admin';
 import reportWebVitals from './reportWebVitals';
 import { ButtonsFunction } from './ReactsReduxs/Components/ButtonsFunction';
 import ButtonResult from './ReactsReduxs/Components/ButtonResult';
@@ -36,6 +36,7 @@ import CallbackH from './17dec/callbackhook';
 import { ParentContext } from './18dec/contexts';
 import { ParentComponent } from './18dec/contexts';
 import ChildContext from './18dec/contexts1';
+import MainPayload from './ReactsReduxs/Components/MainPayload';
 // import Signup from './fireBase/signup';
 // import Login from './fireBase/login';
 // import Index from './fireBase';
@@ -107,7 +108,7 @@ root.render(
     </Provider> */}
 
 <Provider store={resultStore}>
-<ButtonsFunction/>
+<MainPayload/>
 <ButtonResult/>
 </Provider>
 
